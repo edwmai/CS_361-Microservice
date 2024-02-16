@@ -75,13 +75,16 @@ if __name__ == '__main__':
                     break
                 if message == 'name':
                     name = get_random_name(conn, data.decode('utf-8'))
+                    print("Sending: ", name)
                     conn.sendall(name.encode('utf-8'))
-    
+
                 elif message[:5] == 'genre':
                     name = get_random_name_from_genre(conn, data.decode('utf-8'))
+                    print("Sending: ", name)
                     conn.sendall(name.encode('utf-8'))
-    
+
                 else:
+                    print("Sending: Not a valid message")
                     conn.sendall('Not a valid message'.encode('utf-8'))
         s.close()
     
