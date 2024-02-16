@@ -100,7 +100,8 @@
   
 
 ## UML Sequence Diagram
-![image](https://github.com/edwmai/CS_361-Microservice/assets/102533375/9c175bfc-1e83-403f-90b1-f3d922215c53)
+![image](https://github.com/edwmai/CS_361-Microservice/assets/102533375/48bbdff7-c4d0-498a-8827-90393938d76e)
+
 
 
 
