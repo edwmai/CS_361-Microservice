@@ -98,4 +98,7 @@
                 print('Connection closed')
                 break
   
-  
+
+## UML Sequence Diagram
+![image](https://github.com/edwmai/CS_361-Microservice/assets/102533375/2ba1b175-347c-4a86-a750-5f76b7acb5c5)
+
