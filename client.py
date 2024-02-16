@@ -20,3 +20,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         except KeyboardInterrupt:
             print('Connection closed')
             break
+
+# genres : point-and-click, fighting, shooter, music, platform, puzzle, racing, rts, rpg, simulator, sport, strategy
