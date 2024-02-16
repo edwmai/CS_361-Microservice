@@ -71,6 +71,7 @@ if __name__ == '__main__':
             while True:
                 data = conn.recv(1024)
                 message = data.decode('utf-8').lower()
+                print('Received:', message)
                 if not data: 
                     break
                 if message == 'name':
@@ -83,9 +84,15 @@ if __name__ == '__main__':
                     print("Sending: ", name)
                     conn.sendall(name.encode('utf-8'))
 
+                elif message == 'end':
+                    print('Sending: Goodbye')
+                    conn.sendall('Goodbye'.encode('utf-8'))
+                    break
+
                 else:
                     print("Sending: Not a valid message")
                     conn.sendall('Not a valid message'.encode('utf-8'))
+                    conn.close()
         s.close()
     
 

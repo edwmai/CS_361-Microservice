@@ -10,12 +10,12 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         try:
 
             message = input('Random video game name (name/genre:{genre}/end):')
-            if message == 'end':
-                print('Goodbye')
-                break
-            else:
-                s.sendall(message.encode('utf-8'))
+            print("Sending: ", message)
+            s.sendall(message.encode('utf-8'))
             data = s.recv(1024)
+            if data.decode('utf-8') == 'Goodbye':
+                print('Connection closed')
+                break
             print('Received:', data.decode('utf-8'))
         except KeyboardInterrupt:
             print('Connection closed')
