@@ -1,5 +1,10 @@
 # This microservice program returns back random video game names. It can also return back random video game names in a specific genre.
 
+## Utilizing the API <br>
+In order to use the API from IGDB, you must have a Twitch Account and sign up for the Twitch Developer Portal. You can do that here: https://api-docs.igdb.com/#getting-started <br>
+After generating yoiur unique Client ID and Client Secret, replace your unique Client ID and Client Secret into the code of the microservice in order to get authorized to call the API.
+
+
 ## Requesting Data:<br>
   Using sockets, connect to HOST '192.168.5.9' and PORT 50007.<br>
   The microservice will accept 3 messages: 'name', 'genre:{genre}', and 'end'<br>
